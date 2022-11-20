@@ -50,13 +50,7 @@ function App() {
       {tasks.length > 0 &&
         tasks.map((task) => {
           return (
-            <Task
-              key={task.id}
-              task={task}
-              tasks={tasks}
-              setTasks={setTasks}
-              setTask={setTask}
-            />
+            <Task key={task.id} task={task} tasks={tasks} setTasks={setTasks} />
           );
         })}
     </div>
